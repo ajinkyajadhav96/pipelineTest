@@ -7,13 +7,13 @@ pipeline {
                 sh 'yarn start'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'yarn test'
-                sh 'a'
-                sh 'q'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'yarn test'
+        //         sh 'a'
+        //         sh 'q'
+        //     }
+        // }
         stage('Build') {
             steps {
                 sh 'yarn build'
