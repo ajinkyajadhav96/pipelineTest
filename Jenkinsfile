@@ -7,6 +7,11 @@ pipeline {
                 sh 'yarn start'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'yarn test'
+            }
+        }
     
     }
 }
